@@ -2,5 +2,9 @@
    "private": true,
    "name": "lunch-monorepo",
    "workspaces": ["packages/*"],
-   "scripts": {}
+   "scripts": {
+      "deploy:prisma": "echo 'prisma deploy and point to env file'",
+      "deploy:server": "git subtree push --prefix packages/server heroku-backend master", 
+      "deploy:client": "git subtree push --prefix packages/client heroku-frontend master" 
+   }
 }
