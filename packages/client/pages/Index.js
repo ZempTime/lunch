@@ -11,7 +11,7 @@ const MEALS_QUERY = gql`
   }
 `;
 
-function Home() {
+function Index() {
   const {data, loading, error} = useQuery(MEALS_QUERY);
 
   if(loading) return <p>Loading!</p>
@@ -29,4 +29,4 @@ function Home() {
   )
 }
 
-export default Home;
+export default Index;
