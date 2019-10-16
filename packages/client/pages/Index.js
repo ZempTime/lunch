@@ -14,7 +14,7 @@ const MEALS_QUERY = gql`
 function Home() {
   const {data, loading, error} = useQuery(MEALS_QUERY);
 
-  if(loading) <p>Loading!</p>
+  if(loading) return <p>Loading!</p>
   if(error) return <p>Error: {JSON.stringify(error)}</p>
 
   return (
