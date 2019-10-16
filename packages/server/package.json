@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "tsc-watch --onSuccess 'node --inspect=0.0.0.0:5858 dist/index.js'",
-    "prisma:deploy": "prisma deploy"
+    "prisma:deploy": "prisma deploy --env-file .env"
   },
   "dependencies": {
     "@types/koa": "^2.0.50",
