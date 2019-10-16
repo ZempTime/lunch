@@ -1,0 +1,5 @@
+type Meal {
+  id: ID! @id
+  name: String!
+  satisfactionLevel: Int
+}

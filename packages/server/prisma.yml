@@ -1,0 +1,10 @@
+endpoint: https://us1.prisma.sh/chris-zempel-cb038a/lunch-dev/dev
+datamodel: src/prisma/datamodel.graphql
+
+generate:
+  - generator: typescript-client
+    output: ./src/prisma/generated/prisma-client/
+
+hooks:
+  post-deploy:
+      - graphql get-schema -p prisma
