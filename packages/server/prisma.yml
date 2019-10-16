@@ -1,5 +1,6 @@
-endpoint: https://us1.prisma.sh/chris-zempel-cb038a/lunch-dev/dev
+endpoint: ${env:PRISMA_ENDPOINT}
 datamodel: src/prisma/datamodel.graphql
+secret: ${env:PRISMA_SECRET}
 
 generate:
   - generator: typescript-client
