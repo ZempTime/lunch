@@ -4,7 +4,7 @@ import withApollo from 'next-with-apollo'
 import {createHttpLink} from 'apollo-link-http'
 import fetch from 'isomorphic-unfetch'
 
-const GRAPHQL_URL = process.env.NODE_ENV === "development" ? "http://localhost:3001/graphql" : "https://lunch-prod.herokuapp.com/";
+const GRAPHQL_URL = process.env.NODE_ENV === "development" ? "http://localhost:3001/graphql" : "https://lunch-prod.herokuapp.com/graphql";
 
 const link = createHttpLink({
   fetch,
